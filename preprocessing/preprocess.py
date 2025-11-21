@@ -1,8 +1,8 @@
 import os
 import win32com.client as win32
 
-base_directory = os.path.dirname(os.path.abspath(__file__))
-doc_file_path = os.path.join(base_directory,'luat.doc')
+base_directory = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+doc_file_path = os.path.join(base_directory,'data','luat.doc')
 
 def doc_to_docx(doc_file_path):
     word = win32.Dispatch('Word.Application')
