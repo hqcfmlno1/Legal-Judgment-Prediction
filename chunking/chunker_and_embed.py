@@ -19,10 +19,14 @@ checkpoint = 'bkai-foundation-models/vietnamese-bi-encoder'
 model = AutoModel.from_pretrained(checkpoint)
 tokenizer = AutoTokenizer.from_pretrained(checkpoint)
 
+# calculate number of tokens per word-segmented title to find the max number of tokens for adjusting chunk size
+number_of_tokens_per_word_segmented_title = [len( tokenizer.tokenize(ViTokenizer.tokenize(item['title'])) ) for item in metadata]
+
+# text splitter
 text_splitter = RecursiveCharacterTextSplitter.from_huggingface_tokenizer(
     tokenizer,
-    chunk_size = 256,
-    chunk_overlap = 50,
+    chunk_size = 256 - max(number_of_tokens_per_word_segmented_title),
+    chunk_overlap = int((256 - max(number_of_tokens_per_word_segmented_title))*0.17),
     separators=["\n\n", "\n", r".", " ", ""]
 )
 
@@ -34,9 +38,7 @@ def chunk_text(article):
 # create chunks for all articles and adding word segmentation
 for item in metadata:
     item['id'] = int(re.findall(r"Điều\s(\d+)\.",item['title'])[0])
-    item['title'] = ViTokenizer.tokenize(item['title'])
-    chunks = [(item['title'] + " " + chunk) for chunk in chunk_text(item['content'])]
+    word_segmented_title = ViTokenizer.tokenize(item['title'])
+    chunks = [(word_segmented_title + " " + chunk) for chunk in chunk_text(item['content'])]
     item['chunks'] = [ViTokenizer.tokenize(chunk) for chunk in chunks]
-
-
 
