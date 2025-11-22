@@ -3,7 +3,7 @@ import os
 import re 
 
 base_directory = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-docx_file_path = os.path.join(base_directory,'data','luat.docx')
+docx_file_path = os.path.join(base_directory,'data','processed','luat.docx')
 
 luat = docx.Document(docx_file_path)
 
@@ -35,7 +35,7 @@ for article in articles:
 
 # save metadata to a file
 import json
-output_file_path = os.path.join(base_directory,'parser','luat_hinh_su_metadata.json')
+output_file_path = os.path.join(base_directory,'data','processed','luat_hinh_su_metadata.json')
 with open(output_file_path, 'w', encoding='utf-8') as f:
     json.dump(metadata, f, ensure_ascii=False, indent=4)
 
