@@ -63,5 +63,14 @@ with torch.no_grad():
 embeddings = mean_pooling(model_output, input_attention_mask)
 embeddings = embeddings.detach().tolist()
 chunk_embedings = dict(zip(chunks, embeddings))
-print(chunk_embedings)
 
+
+#resave metadata with chunks and embeddings
+import json
+output_file_path_meta = os.path.join(base_directory,'data','processed','luat_hinh_su_metadata.json')
+with open(output_file_path_meta, 'w', encoding='utf-8') as f:
+    json.dump(metadata, f, ensure_ascii=False, indent=4)
+# save chunks and their embeddings
+output_file_path_chunk_embed = os.path.join(base_directory,'data','processed','chunks_embed.json')
+with open(output_file_path_chunk_embed, 'w', encoding='utf-8') as f:
+    json.dump(chunk_embedings, f, ensure_ascii=False, indent=4)
