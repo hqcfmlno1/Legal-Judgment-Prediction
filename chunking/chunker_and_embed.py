@@ -1,6 +1,7 @@
 import json
 import re
 import os
+import torch
 from dotenv import load_dotenv
 from transformers import AutoTokenizer, AutoModel
 from langchain_text_splitters import RecursiveCharacterTextSplitter
@@ -18,6 +19,8 @@ with open(json_file_path, 'r', encoding='utf-8') as f:
 checkpoint = 'bkai-foundation-models/vietnamese-bi-encoder'
 model = AutoModel.from_pretrained(checkpoint)
 tokenizer = AutoTokenizer.from_pretrained(checkpoint)
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+model.to(device)
 
 # calculate number of tokens per word-segmented title to find the max number of tokens for adjusting chunk size
 number_of_tokens_per_word_segmented_title = [len( tokenizer.tokenize(ViTokenizer.tokenize(item['title'])) ) for item in metadata]
@@ -41,4 +44,24 @@ for item in metadata:
     word_segmented_title = ViTokenizer.tokenize(item['title'])
     chunks = [(word_segmented_title + " " + chunk) for chunk in chunk_text(item['content'])]
     item['chunks'] = [ViTokenizer.tokenize(chunk) for chunk in chunks]
+
+#chunks embedding
+
+def mean_pooling(model_output, attention_mask):
+    token_embeddings = model_output[0] 
+    input_mask_expanded = attention_mask.unsqueeze(-1).expand(token_embeddings.size()).float()
+    return torch.sum(token_embeddings * input_mask_expanded, 1) / torch.clamp(input_mask_expanded.sum(1), min=1e-9)
+
+
+chunks = [chunk for item in metadata for chunk in item['chunks']]
+inputs = tokenizer(chunks, padding=True, truncation=True, return_tensors='pt')
+inputs = {key: value.to(device) for key, value in inputs.items()} #convert to gpu
+input_attention_mask = inputs['attention_mask']
+with torch.no_grad():
+    model_output = model(**inputs)
+
+embeddings = mean_pooling(model_output, input_attention_mask)
+embeddings = embeddings.detach().tolist()
+chunk_embedings = dict(zip(chunks, embeddings))
+print(chunk_embedings)
 
