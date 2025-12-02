@@ -5,7 +5,7 @@ import json
 from pydantic import BaseModel, Field
 
 
-base_directory = os.path.dirname(os.path.abspath(__file__))
+base_directory = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 json_file_path = os.path.join(base_directory,'data','processed','luat_hinh_su_metadata.json')
 dotenv_path = os.path.join(base_directory,'.env')  
 load_dotenv(dotenv_path=dotenv_path)
@@ -63,6 +63,8 @@ else:
     law_list = "\n\n".join(law_list)
     graph_list += json.loads(list_of_referenced_laws(law_list))['items']
 
+# save to json (type list of dict)
 output_file_path_meta = os.path.join(base_directory,'data','processed','graph_lookup.json')
 with open(output_file_path_meta, 'w', encoding='utf-8') as f:
     json.dump(graph_list, f, ensure_ascii=False, indent=4)
+
