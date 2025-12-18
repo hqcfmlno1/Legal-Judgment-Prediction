@@ -9,7 +9,7 @@ class LegalPostgresDb:
             user=user,
             password=password
         )
-    def top_similar_articles(self, input_reformated_text, input_embedding, limit=30, threshold=0.63):
+    def top_similar_articles(self, input_reformated_text, input_embedding, limit=30, threshold=0.8):
         with self.conn:
             with self.conn.cursor() as cursor:
                 cursor.execute(
@@ -61,13 +61,14 @@ class LegalPostgresDb:
                 rows = cursor.fetchall()
         return rows
 
-    def find_article_content(self, article_list):
+    def find_article_content(self, article_id_list):
         with self.conn:
             with self.conn.cursor() as cursor:
                 cursor.execute(
                     """
                     select concat(article_name,' ',full_content) from articles where article_id in %s
                     """,
-                    (tuple(article_list),))
+                    (tuple(article_id_list),))
                 rows = cursor.fetchall()
-        return rows
+                article_contents = [item[0] for item in rows]
+        return article_contents

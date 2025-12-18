@@ -9,7 +9,10 @@ class GraphLookUp:
             user=user,
             password=password,
         )
-        self.filepath = filepath
+        self.filepath = filepath # file path for related_article.json
+
+
+    # get all related articles give a list of article ids
     def getRelatedArticle(self,article_id_list):
         with open(self.filepath, 'r', encoding='utf-8') as f:
             metadata = json.load(f)
@@ -18,7 +21,7 @@ class GraphLookUp:
             with self.conn.cursor() as cursor:
                 cursor.execute(
                     """
-                    select concat(article_id,' ',full_content) from articles where article_id in %s;
+                    select concat('Điều ',article_id,' ',full_content) from articles where article_id in %s;
                     """,
                     (tuple(all_related_article_list),))
                 rows = cursor.fetchall()

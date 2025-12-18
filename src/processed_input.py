@@ -9,6 +9,8 @@ from src import database
 from unidecode import unidecode
 
 class ProcessedInput:
+
+    # for postgres web search
     def reformat(text):
         text = ViTokenizer.tokenize(text)
         text = unidecode(text)
