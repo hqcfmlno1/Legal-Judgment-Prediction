@@ -1,28 +1,23 @@
 import psycopg2
 import json
 class GraphLookUp:
-    def __init__(self, host, port, dbname, user, password, filepath):
-        self.conn = psycopg2.connect(
-            host=host,
-            port=port,
-            dbname=dbname,
-            user=user,
-            password=password,
-        )
+    def __init__(self,filepath):
         self.filepath = filepath # file path for related_article.json
 
-
-    # get all related articles give a list of article ids
-    def getRelatedArticle(self,article_id_list):
+    # get all related article ids given an article_id return as a list of article ids
+    def getAllRelatedArticleId(self,article_id):
+        res=[]
+        q=[]
+        visited = [0]*500
         with open(self.filepath, 'r', encoding='utf-8') as f:
             metadata = json.load(f)
-        all_related_article_list = [item2 for item1 in article_id_list for item2 in metadata[str(item1)]]
-        with self.conn:
-            with self.conn.cursor() as cursor:
-                cursor.execute(
-                    """
-                    select concat('Điều ',article_id,' ',full_content) from articles where article_id in %s;
-                    """,
-                    (tuple(all_related_article_list),))
-                rows = cursor.fetchall()
-        return rows
+        visited[article_id]=1
+        q.append(article_id)
+        while len(q)!=0:
+            current = q.pop(0)
+            for i in metadata[str(current)]:
+                if visited[i]==0:
+                    q.append(i)
+                    res.append(i)
+                    visited[i]=1
+        return res
