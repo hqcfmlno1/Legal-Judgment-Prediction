@@ -5,86 +5,57 @@ import torch
 from pyvi import ViTokenizer
 from transformers import AutoTokenizer, AutoModel
 import google.generativeai as genai
+import json
+from pydantic import BaseModel, Field
+from src.database import LegalPostgresDb
+from src.processed_input import ProcessedInput
+from unidecode import unidecode
+from src.graph_lookup import GraphLookUp
+from src.reranker import ReRanker
 
 base_directory = os.path.dirname(os.path.abspath(__file__))
+json_file_path = os.path.join(base_directory,'data','processed','related_article.json')
 dotenv_path = os.path.join(base_directory,'.env')  
 load_dotenv(dotenv_path=dotenv_path)
 
+host=os.getenv('DB_HOST')
+port=os.getenv('DB_PORT')
+dbname=os.getenv('DB_NAME')
+user=os.getenv('DB_USER')
+password=os.getenv('DB_PASSWORD')
 
-conn = psycopg2.connect(
-    host=os.getenv('DB_HOST'),
-    port=os.getenv('DB_PORT'),
-    dbname=os.getenv('DB_NAME'),
-    user=os.getenv('DB_USER'),
-    password=os.getenv('DB_PASSWORD')
-)
+postgres_db = LegalPostgresDb(host,port,dbname,user,password)
 
-
-checkpoint = 'bkai-foundation-models/vietnamese-bi-encoder'
-model = AutoModel.from_pretrained(checkpoint)
-tokenizer = AutoTokenizer.from_pretrained(checkpoint)
-
-
-def mean_pooling(model_output, attention_mask):
-    token_embeddings = model_output[0] 
-    input_mask_expanded = attention_mask.unsqueeze(-1).expand(token_embeddings.size()).float()
-    return torch.sum(token_embeddings * input_mask_expanded, 1) / torch.clamp(input_mask_expanded.sum(1), min=1e-9)
-
-
-def return_similar_articles(input_embedding):
-    with conn:
-        with conn.cursor() as cursor:
-            cursor.execute("select distinct concat(article_name,' ',full_content), penal_code_version, (%s::vector <=> c.embedding ) as cosine_distance from articles a join chunk c using(article_id) where (%s::vector <=> c.embedding )<=0.8 order by cosine_distance limit 15;",(input_embedding, input_embedding, ))
-            rows = cursor.fetchall()
-    return rows        
-
-
-def test():
-    with conn:
-        with conn.cursor() as cursor:
-            cursor.execute("select article_name from articles where article_id <= 5")
-            row = cursor.fetchall()
-    return row        
 
 
 input_text = input()
-word_segmented_input = ViTokenizer.tokenize(input_text)
-inputs = tokenizer(word_segmented_input, truncation=True, padding=True, return_tensors = 'pt')
-model_output = model(**inputs)
-final_embedding = mean_pooling(model_output, inputs['attention_mask'])[0].detach().tolist()
-
-# get all related articles
-all_related_articles=return_similar_articles(final_embedding)
-if(len(all_related_articles)==0):
-    print("Không tìm thấy điều luật liên quan")
-else:
-    context_for_prompt = [article[0] for article in all_related_articles]
-    context_for_prompt_str = "\n".join(context_for_prompt)
-    context_for_prompt_str+=all_related_articles[0][1]  # add penal code version info
-
-    genai.configure(api_key=os.getenv('GOOGLE_API_KEY'))
-    generation_config = {
-    "temperature": 0.2,   # 0.0 - 1.0 (Thấp = chính xác, Cao = sáng tạo)
-    "top_p": 0.95,
-    "top_k": 64,
-    "max_output_tokens": 10000, # Độ dài câu trả lời mong muốn
-    }
-    model = genai.GenerativeModel(
-    model_name="gemini-2.5-pro",
-    generation_config=generation_config
-    )
-
-    prompt = f"""
-    Bạn là 1 trợ lý am hiểu về luật pháp hãy giúp tôi tìm ra các chủ thể có tội và hình phạt tương ứng của họ trong trường hợp sau:
-    Ngữ cảnh: {input_text}
-    Biết các điều luật có thể liên quan đến trường hợp trong ngữ cảnh của tôi là:
-    {context_for_prompt_str}
-    Hãy liệt kê các chủ thể có tội và hình phạt tương ứng của họ không cần liệt kê ra các điều luật trong các điều luật liên quan được gửi nếu bạn cảm thấy điều luật đó thực sự không liên quan.
-    """
-    response = model.generate_content(prompt)
-    print(response.text)
-    
+rephrase_input_text = ProcessedInput.queryRewriting(input_text, dotenv_path)
 
 
+word_for_fts = ProcessedInput.reformat(rephrase_input_text)
+final_embedding = ProcessedInput.getEmbedding(checkpoint = 'bkai-foundation-models/vietnamese-bi-encoder', text = rephrase_input_text)
+
+article_list = postgres_db.top_similar_articles(word_for_fts, final_embedding, limit=100, threshold=1.5)
+print(article_list)
+
+# 1 dict có key là đầy đủ luật hình sự và val là giá trị của id của điều
+candidate_articles_id_mapper = postgres_db.find_article_content(article_list)
+candidate_articles = [key for key in candidate_articles_id_mapper]
+
+
+reranker_test = ReRanker(checkpoint = 'BAAI/bge-reranker-v2-m3')
+final_candidate_articles = reranker_test.getTopK(input_text, candidate_articles, top_k=30, batch_size=10)
+article_id_set = set({})
+for article_content in final_candidate_articles:
+    article_id_set.add(candidate_articles_id_mapper[article_content])
+
+graph_lookup = GraphLookUp(filepath=json_file_path)
+reference_article_id_list = set({})
+for article_id in article_id_set:
+    reference_article_id_list.update(graph_lookup.getAllRelatedArticleId(article_id))
+article_id_set.update(reference_article_id_list)
+
+
+print(article_id_set)
 
 
