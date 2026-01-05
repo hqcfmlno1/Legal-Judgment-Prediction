@@ -59,16 +59,17 @@ class LegalPostgresDb:
                     """,
                     (input_reformated_text, input_reformated_text, input_embedding, input_embedding, threshold, limit))
                 rows = cursor.fetchall()
-        return rows
+                top_k_article_ids = [item[0] for item in rows]
+        return top_k_article_ids
 
     def find_article_content(self, article_id_list):
         with self.conn:
             with self.conn.cursor() as cursor:
                 cursor.execute(
                     """
-                    select concat(article_name,' ',full_content) from articles where article_id in %s
+                    select article_id, concat(article_name,' ',full_content) from articles where article_id in %s
                     """,
                     (tuple(article_id_list),))
                 rows = cursor.fetchall()
-                article_contents = [item[0] for item in rows]
-        return article_contents
+                map_content_id = {item[1]:item[0] for item in rows}
+        return map_content_id
