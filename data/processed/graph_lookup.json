@@ -1,0 +1,2333 @@
+[
+    {
+        "id": 1,
+        "referenced_laws": []
+    },
+    {
+        "id": 2,
+        "referenced_laws": [
+            76
+        ]
+    },
+    {
+        "id": 3,
+        "referenced_laws": []
+    },
+    {
+        "id": 4,
+        "referenced_laws": []
+    },
+    {
+        "id": 5,
+        "referenced_laws": []
+    },
+    {
+        "id": 6,
+        "referenced_laws": []
+    },
+    {
+        "id": 7,
+        "referenced_laws": []
+    },
+    {
+        "id": 8,
+        "referenced_laws": []
+    },
+    {
+        "id": 9,
+        "referenced_laws": [
+            76
+        ]
+    },
+    {
+        "id": 10,
+        "referenced_laws": []
+    },
+    {
+        "id": 11,
+        "referenced_laws": []
+    },
+    {
+        "id": 12,
+        "referenced_laws": [
+            123,
+            134,
+            141,
+            142,
+            143,
+            144,
+            150,
+            151,
+            168,
+            169,
+            170,
+            171,
+            173,
+            178,
+            248,
+            249,
+            250,
+            251,
+            252,
+            265,
+            266,
+            286,
+            287,
+            289,
+            290,
+            299,
+            303,
+            304
+        ]
+    },
+    {
+        "id": 13,
+        "referenced_laws": []
+    },
+    {
+        "id": 14,
+        "referenced_laws": [
+            109,
+            113,
+            299,
+            108,
+            110,
+            111,
+            112,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            123,
+            134,
+            168,
+            169,
+            207,
+            300,
+            301,
+            302,
+            303,
+            324
+        ]
+    },
+    {
+        "id": 15,
+        "referenced_laws": []
+    },
+    {
+        "id": 16,
+        "referenced_laws": []
+    },
+    {
+        "id": 17,
+        "referenced_laws": []
+    },
+    {
+        "id": 18,
+        "referenced_laws": [
+            389
+        ]
+    },
+    {
+        "id": 19,
+        "referenced_laws": [
+            390
+        ]
+    },
+    {
+        "id": 20,
+        "referenced_laws": []
+    },
+    {
+        "id": 21,
+        "referenced_laws": []
+    },
+    {
+        "id": 22,
+        "referenced_laws": []
+    },
+    {
+        "id": 23,
+        "referenced_laws": []
+    },
+    {
+        "id": 24,
+        "referenced_laws": []
+    },
+    {
+        "id": 25,
+        "referenced_laws": []
+    },
+    {
+        "id": 26,
+        "referenced_laws": [
+            421,
+            422,
+            423
+        ]
+    },
+    {
+        "id": 27,
+        "referenced_laws": []
+    },
+    {
+        "id": 28,
+        "referenced_laws": [
+            27,
+            353,
+            354
+        ]
+    },
+    {
+        "id": 29,
+        "referenced_laws": []
+    },
+    {
+        "id": 30,
+        "referenced_laws": []
+    },
+    {
+        "id": 31,
+        "referenced_laws": []
+    },
+    {
+        "id": 32,
+        "referenced_laws": []
+    },
+    {
+        "id": 33,
+        "referenced_laws": []
+    },
+    {
+        "id": 34,
+        "referenced_laws": []
+    },
+    {
+        "id": 35,
+        "referenced_laws": [
+            77
+        ]
+    },
+    {
+        "id": 36,
+        "referenced_laws": []
+    },
+    {
+        "id": 37,
+        "referenced_laws": []
+    },
+    {
+        "id": 38,
+        "referenced_laws": []
+    },
+    {
+        "id": 39,
+        "referenced_laws": []
+    },
+    {
+        "id": 40,
+        "referenced_laws": []
+    },
+    {
+        "id": 41,
+        "referenced_laws": []
+    },
+    {
+        "id": 42,
+        "referenced_laws": []
+    },
+    {
+        "id": 43,
+        "referenced_laws": [
+            44
+        ]
+    },
+    {
+        "id": 44,
+        "referenced_laws": []
+    },
+    {
+        "id": 45,
+        "referenced_laws": []
+    },
+    {
+        "id": 46,
+        "referenced_laws": []
+    },
+    {
+        "id": 47,
+        "referenced_laws": []
+    },
+    {
+        "id": 48,
+        "referenced_laws": []
+    },
+    {
+        "id": 49,
+        "referenced_laws": [
+            21
+        ]
+    },
+    {
+        "id": 50,
+        "referenced_laws": []
+    },
+    {
+        "id": 51,
+        "referenced_laws": []
+    },
+    {
+        "id": 52,
+        "referenced_laws": []
+    },
+    {
+        "id": 53,
+        "referenced_laws": []
+    },
+    {
+        "id": 54,
+        "referenced_laws": [
+            51,
+            54
+        ]
+    },
+    {
+        "id": 55,
+        "referenced_laws": [
+            55
+        ]
+    },
+    {
+        "id": 56,
+        "referenced_laws": [
+            55,
+            56
+        ]
+    },
+    {
+        "id": 57,
+        "referenced_laws": []
+    },
+    {
+        "id": 58,
+        "referenced_laws": []
+    },
+    {
+        "id": 59,
+        "referenced_laws": [
+            54
+        ]
+    },
+    {
+        "id": 60,
+        "referenced_laws": [
+            60
+        ]
+    },
+    {
+        "id": 61,
+        "referenced_laws": [
+            353,
+            354
+        ]
+    },
+    {
+        "id": 62,
+        "referenced_laws": []
+    },
+    {
+        "id": 63,
+        "referenced_laws": [
+            40
+        ]
+    },
+    {
+        "id": 64,
+        "referenced_laws": [
+            63
+        ]
+    },
+    {
+        "id": 65,
+        "referenced_laws": [
+            56
+        ]
+    },
+    {
+        "id": 66,
+        "referenced_laws": [
+            299,
+            168,
+            169,
+            248,
+            251,
+            252,
+            40,
+            56
+        ]
+    },
+    {
+        "id": 67,
+        "referenced_laws": [
+            56
+        ]
+    },
+    {
+        "id": 68,
+        "referenced_laws": [
+            67
+        ]
+    },
+    {
+        "id": 70,
+        "referenced_laws": []
+    },
+    {
+        "id": 71,
+        "referenced_laws": []
+    },
+    {
+        "id": 72,
+        "referenced_laws": [
+            70,
+            71
+        ]
+    },
+    {
+        "id": 73,
+        "referenced_laws": [
+            70,
+            71
+        ]
+    },
+    {
+        "id": 74,
+        "referenced_laws": []
+    },
+    {
+        "id": 75,
+        "referenced_laws": [
+            27
+        ]
+    },
+    {
+        "id": 76,
+        "referenced_laws": [
+            188,
+            189,
+            190,
+            191,
+            192,
+            193,
+            194,
+            195,
+            196,
+            200,
+            203,
+            209,
+            210,
+            211,
+            213,
+            216,
+            217,
+            225,
+            226,
+            227,
+            232,
+            234,
+            235,
+            237,
+            238,
+            239,
+            242,
+            243,
+            244,
+            245,
+            246,
+            300,
+            324
+        ]
+    },
+    {
+        "id": 77,
+        "referenced_laws": []
+    },
+    {
+        "id": 78,
+        "referenced_laws": []
+    },
+    {
+        "id": 79,
+        "referenced_laws": []
+    },
+    {
+        "id": 80,
+        "referenced_laws": []
+    },
+    {
+        "id": 81,
+        "referenced_laws": []
+    },
+    {
+        "id": 82,
+        "referenced_laws": [
+            47,
+            48
+        ]
+    },
+    {
+        "id": 83,
+        "referenced_laws": []
+    },
+    {
+        "id": 84,
+        "referenced_laws": []
+    },
+    {
+        "id": 85,
+        "referenced_laws": []
+    },
+    {
+        "id": 86,
+        "referenced_laws": [
+            79
+        ]
+    },
+    {
+        "id": 87,
+        "referenced_laws": [
+            86
+        ]
+    },
+    {
+        "id": 88,
+        "referenced_laws": []
+    },
+    {
+        "id": 89,
+        "referenced_laws": []
+    },
+    {
+        "id": 90,
+        "referenced_laws": []
+    },
+    {
+        "id": 91,
+        "referenced_laws": [
+            29,
+            134,
+            141,
+            171,
+            248,
+            249,
+            250,
+            251,
+            252,
+            12,
+            123,
+            142,
+            144,
+            150,
+            151,
+            168
+        ]
+    },
+    {
+        "id": 92,
+        "referenced_laws": []
+    },
+    {
+        "id": 93,
+        "referenced_laws": [
+            91
+        ]
+    },
+    {
+        "id": 94,
+        "referenced_laws": [
+            91,
+            93
+        ]
+    },
+    {
+        "id": 95,
+        "referenced_laws": [
+            91,
+            93
+        ]
+    },
+    {
+        "id": 96,
+        "referenced_laws": []
+    },
+    {
+        "id": 97,
+        "referenced_laws": []
+    },
+    {
+        "id": 98,
+        "referenced_laws": []
+    },
+    {
+        "id": 99,
+        "referenced_laws": []
+    },
+    {
+        "id": 100,
+        "referenced_laws": []
+    },
+    {
+        "id": 101,
+        "referenced_laws": []
+    },
+    {
+        "id": 102,
+        "referenced_laws": [
+            57,
+            99,
+            100,
+            101
+        ]
+    },
+    {
+        "id": 103,
+        "referenced_laws": [
+            55
+        ]
+    },
+    {
+        "id": 104,
+        "referenced_laws": [
+            55,
+            56,
+            103
+        ]
+    },
+    {
+        "id": 105,
+        "referenced_laws": []
+    },
+    {
+        "id": 106,
+        "referenced_laws": [
+            66
+        ]
+    },
+    {
+        "id": 107,
+        "referenced_laws": []
+    },
+    {
+        "id": 108,
+        "referenced_laws": []
+    },
+    {
+        "id": 109,
+        "referenced_laws": []
+    },
+    {
+        "id": 110,
+        "referenced_laws": []
+    },
+    {
+        "id": 111,
+        "referenced_laws": []
+    },
+    {
+        "id": 112,
+        "referenced_laws": []
+    },
+    {
+        "id": 113,
+        "referenced_laws": []
+    },
+    {
+        "id": 114,
+        "referenced_laws": []
+    },
+    {
+        "id": 115,
+        "referenced_laws": []
+    },
+    {
+        "id": 116,
+        "referenced_laws": []
+    },
+    {
+        "id": 117,
+        "referenced_laws": []
+    },
+    {
+        "id": 118,
+        "referenced_laws": [
+            112
+        ]
+    },
+    {
+        "id": 119,
+        "referenced_laws": []
+    },
+    {
+        "id": 120,
+        "referenced_laws": []
+    },
+    {
+        "id": 121,
+        "referenced_laws": []
+    },
+    {
+        "id": 122,
+        "referenced_laws": []
+    },
+    {
+        "id": 123,
+        "referenced_laws": []
+    },
+    {
+        "id": 124,
+        "referenced_laws": []
+    },
+    {
+        "id": 125,
+        "referenced_laws": []
+    },
+    {
+        "id": 126,
+        "referenced_laws": []
+    },
+    {
+        "id": 127,
+        "referenced_laws": []
+    },
+    {
+        "id": 128,
+        "referenced_laws": []
+    },
+    {
+        "id": 129,
+        "referenced_laws": []
+    },
+    {
+        "id": 130,
+        "referenced_laws": []
+    },
+    {
+        "id": 131,
+        "referenced_laws": []
+    },
+    {
+        "id": 132,
+        "referenced_laws": []
+    },
+    {
+        "id": 133,
+        "referenced_laws": []
+    },
+    {
+        "id": 134,
+        "referenced_laws": [
+            134
+        ]
+    },
+    {
+        "id": 135,
+        "referenced_laws": []
+    },
+    {
+        "id": 136,
+        "referenced_laws": []
+    },
+    {
+        "id": 137,
+        "referenced_laws": []
+    },
+    {
+        "id": 138,
+        "referenced_laws": []
+    },
+    {
+        "id": 139,
+        "referenced_laws": []
+    },
+    {
+        "id": 140,
+        "referenced_laws": [
+            185
+        ]
+    },
+    {
+        "id": 141,
+        "referenced_laws": []
+    },
+    {
+        "id": 142,
+        "referenced_laws": []
+    },
+    {
+        "id": 143,
+        "referenced_laws": []
+    },
+    {
+        "id": 144,
+        "referenced_laws": []
+    },
+    {
+        "id": 145,
+        "referenced_laws": [
+            142,
+            144
+        ]
+    },
+    {
+        "id": 146,
+        "referenced_laws": []
+    },
+    {
+        "id": 147,
+        "referenced_laws": []
+    },
+    {
+        "id": 148,
+        "referenced_laws": [
+            142,
+            145
+        ]
+    },
+    {
+        "id": 149,
+        "referenced_laws": [
+            148
+        ]
+    },
+    {
+        "id": 150,
+        "referenced_laws": []
+    },
+    {
+        "id": 151,
+        "referenced_laws": []
+    },
+    {
+        "id": 152,
+        "referenced_laws": []
+    },
+    {
+        "id": 153,
+        "referenced_laws": []
+    },
+    {
+        "id": 154,
+        "referenced_laws": []
+    },
+    {
+        "id": 155,
+        "referenced_laws": []
+    },
+    {
+        "id": 156,
+        "referenced_laws": []
+    },
+    {
+        "id": 157,
+        "referenced_laws": [
+            153,
+            377
+        ]
+    },
+    {
+        "id": 158,
+        "referenced_laws": []
+    },
+    {
+        "id": 159,
+        "referenced_laws": []
+    },
+    {
+        "id": 160,
+        "referenced_laws": []
+    },
+    {
+        "id": 161,
+        "referenced_laws": []
+    },
+    {
+        "id": 162,
+        "referenced_laws": []
+    },
+    {
+        "id": 163,
+        "referenced_laws": []
+    },
+    {
+        "id": 164,
+        "referenced_laws": []
+    },
+    {
+        "id": 165,
+        "referenced_laws": []
+    },
+    {
+        "id": 166,
+        "referenced_laws": []
+    },
+    {
+        "id": 167,
+        "referenced_laws": []
+    },
+    {
+        "id": 168,
+        "referenced_laws": []
+    },
+    {
+        "id": 169,
+        "referenced_laws": []
+    },
+    {
+        "id": 170,
+        "referenced_laws": []
+    },
+    {
+        "id": 171,
+        "referenced_laws": []
+    },
+    {
+        "id": 172,
+        "referenced_laws": [
+            168,
+            169,
+            170,
+            171,
+            173,
+            174,
+            175,
+            290
+        ]
+    },
+    {
+        "id": 173,
+        "referenced_laws": [
+            168,
+            169,
+            170,
+            171,
+            172,
+            174,
+            175,
+            290
+        ]
+    },
+    {
+        "id": 174,
+        "referenced_laws": [
+            168,
+            169,
+            170,
+            171,
+            172,
+            173,
+            175,
+            290
+        ]
+    },
+    {
+        "id": 175,
+        "referenced_laws": [
+            168,
+            169,
+            170,
+            171,
+            172,
+            173,
+            174,
+            290
+        ]
+    },
+    {
+        "id": 176,
+        "referenced_laws": []
+    },
+    {
+        "id": 177,
+        "referenced_laws": [
+            219,
+            220
+        ]
+    },
+    {
+        "id": 178,
+        "referenced_laws": []
+    },
+    {
+        "id": 179,
+        "referenced_laws": []
+    },
+    {
+        "id": 180,
+        "referenced_laws": []
+    },
+    {
+        "id": 181,
+        "referenced_laws": []
+    },
+    {
+        "id": 182,
+        "referenced_laws": []
+    },
+    {
+        "id": 183,
+        "referenced_laws": []
+    },
+    {
+        "id": 184,
+        "referenced_laws": []
+    },
+    {
+        "id": 185,
+        "referenced_laws": []
+    },
+    {
+        "id": 186,
+        "referenced_laws": [
+            380
+        ]
+    },
+    {
+        "id": 187,
+        "referenced_laws": []
+    },
+    {
+        "id": 188,
+        "referenced_laws": [
+            189,
+            190,
+            191,
+            192,
+            193,
+            194,
+            195,
+            196,
+            200,
+            79
+        ]
+    },
+    {
+        "id": 189,
+        "referenced_laws": [
+            188,
+            190,
+            191,
+            192,
+            193,
+            194,
+            195,
+            196,
+            200,
+            79
+        ]
+    },
+    {
+        "id": 190,
+        "referenced_laws": [
+            232,
+            234,
+            244,
+            246,
+            248,
+            251,
+            253,
+            254,
+            304,
+            305,
+            306,
+            309,
+            311,
+            188,
+            189,
+            191,
+            192,
+            193,
+            194,
+            195,
+            196,
+            200,
+            79
+        ]
+    },
+    {
+        "id": 191,
+        "referenced_laws": [
+            79,
+            188,
+            189,
+            190,
+            192,
+            193,
+            194,
+            195,
+            196,
+            200,
+            232,
+            234,
+            239,
+            244,
+            246,
+            249,
+            250,
+            253,
+            254,
+            304,
+            305,
+            306,
+            309,
+            311
+        ]
+    },
+    {
+        "id": 192,
+        "referenced_laws": [
+            79,
+            188,
+            189,
+            190,
+            191,
+            193,
+            194,
+            195,
+            196,
+            200
+        ]
+    },
+    {
+        "id": 193,
+        "referenced_laws": [
+            79
+        ]
+    },
+    {
+        "id": 194,
+        "referenced_laws": [
+            79
+        ]
+    },
+    {
+        "id": 195,
+        "referenced_laws": [
+            79,
+            188,
+            189,
+            190,
+            191,
+            192,
+            193,
+            194,
+            196,
+            200
+        ]
+    },
+    {
+        "id": 196,
+        "referenced_laws": []
+    },
+    {
+        "id": 197,
+        "referenced_laws": []
+    },
+    {
+        "id": 198,
+        "referenced_laws": []
+    },
+    {
+        "id": 199,
+        "referenced_laws": []
+    },
+    {
+        "id": 200,
+        "referenced_laws": [
+            79,
+            188,
+            189,
+            190,
+            191,
+            192,
+            193,
+            194,
+            195,
+            196,
+            202,
+            250,
+            251,
+            253,
+            254,
+            304,
+            305,
+            306,
+            309,
+            311
+        ]
+    },
+    {
+        "id": 201,
+        "referenced_laws": []
+    },
+    {
+        "id": 202,
+        "referenced_laws": []
+    },
+    {
+        "id": 203,
+        "referenced_laws": [
+            79
+        ]
+    },
+    {
+        "id": 204,
+        "referenced_laws": []
+    },
+    {
+        "id": 205,
+        "referenced_laws": []
+    },
+    {
+        "id": 206,
+        "referenced_laws": []
+    },
+    {
+        "id": 207,
+        "referenced_laws": []
+    },
+    {
+        "id": 208,
+        "referenced_laws": []
+    },
+    {
+        "id": 209,
+        "referenced_laws": []
+    },
+    {
+        "id": 210,
+        "referenced_laws": []
+    },
+    {
+        "id": 211,
+        "referenced_laws": [
+            79
+        ]
+    },
+    {
+        "id": 212,
+        "referenced_laws": []
+    },
+    {
+        "id": 213,
+        "referenced_laws": [
+            174,
+            353,
+            355
+        ]
+    },
+    {
+        "id": 214,
+        "referenced_laws": [
+            174,
+            353,
+            355
+        ]
+    },
+    {
+        "id": 215,
+        "referenced_laws": [
+            174,
+            353,
+            355
+        ]
+    },
+    {
+        "id": 216,
+        "referenced_laws": []
+    },
+    {
+        "id": 217,
+        "referenced_laws": []
+    },
+    {
+        "id": 217,
+        "referenced_laws": [
+            174,
+            290
+        ]
+    },
+    {
+        "id": 218,
+        "referenced_laws": []
+    },
+    {
+        "id": 219,
+        "referenced_laws": []
+    },
+    {
+        "id": 220,
+        "referenced_laws": [
+            224
+        ]
+    },
+    {
+        "id": 221,
+        "referenced_laws": []
+    },
+    {
+        "id": 222,
+        "referenced_laws": []
+    },
+    {
+        "id": 223,
+        "referenced_laws": []
+    },
+    {
+        "id": 224,
+        "referenced_laws": []
+    },
+    {
+        "id": 225,
+        "referenced_laws": []
+    },
+    {
+        "id": 226,
+        "referenced_laws": []
+    },
+    {
+        "id": 227,
+        "referenced_laws": []
+    },
+    {
+        "id": 228,
+        "referenced_laws": []
+    },
+    {
+        "id": 229,
+        "referenced_laws": []
+    },
+    {
+        "id": 230,
+        "referenced_laws": []
+    },
+    {
+        "id": 231,
+        "referenced_laws": []
+    },
+    {
+        "id": 232,
+        "referenced_laws": [
+            243,
+            232
+        ]
+    },
+    {
+        "id": 233,
+        "referenced_laws": [
+            232,
+            233
+        ]
+    },
+    {
+        "id": 234,
+        "referenced_laws": [
+            242,
+            244,
+            234,
+            79
+        ]
+    },
+    {
+        "id": 235,
+        "referenced_laws": [
+            235,
+            79
+        ]
+    },
+    {
+        "id": 236,
+        "referenced_laws": [
+            236
+        ]
+    },
+    {
+        "id": 237,
+        "referenced_laws": [
+            237,
+            79
+        ]
+    },
+    {
+        "id": 238,
+        "referenced_laws": [
+            303,
+            238,
+            79
+        ]
+    },
+    {
+        "id": 239,
+        "referenced_laws": [
+            239,
+            79
+        ]
+    },
+    {
+        "id": 240,
+        "referenced_laws": [
+            240
+        ]
+    },
+    {
+        "id": 241,
+        "referenced_laws": []
+    },
+    {
+        "id": 242,
+        "referenced_laws": [
+            244
+        ]
+    },
+    {
+        "id": 243,
+        "referenced_laws": [
+            79
+        ]
+    },
+    {
+        "id": 244,
+        "referenced_laws": [
+            79
+        ]
+    },
+    {
+        "id": 245,
+        "referenced_laws": [
+            79
+        ]
+    },
+    {
+        "id": 246,
+        "referenced_laws": []
+    },
+    {
+        "id": 247,
+        "referenced_laws": []
+    },
+    {
+        "id": 248,
+        "referenced_laws": []
+    },
+    {
+        "id": 249,
+        "referenced_laws": [
+            248,
+            250,
+            251,
+            252
+        ]
+    },
+    {
+        "id": 250,
+        "referenced_laws": [
+            248,
+            249,
+            251,
+            252
+        ]
+    },
+    {
+        "id": 251,
+        "referenced_laws": []
+    },
+    {
+        "id": 252,
+        "referenced_laws": [
+            248,
+            249,
+            250,
+            251
+        ]
+    },
+    {
+        "id": 253,
+        "referenced_laws": []
+    },
+    {
+        "id": 254,
+        "referenced_laws": []
+    },
+    {
+        "id": 255,
+        "referenced_laws": []
+    },
+    {
+        "id": 256,
+        "referenced_laws": [
+            255
+        ]
+    },
+    {
+        "id": 257,
+        "referenced_laws": []
+    },
+    {
+        "id": 258,
+        "referenced_laws": []
+    },
+    {
+        "id": 259,
+        "referenced_laws": []
+    },
+    {
+        "id": 260,
+        "referenced_laws": []
+    },
+    {
+        "id": 261,
+        "referenced_laws": []
+    },
+    {
+        "id": 262,
+        "referenced_laws": []
+    },
+    {
+        "id": 263,
+        "referenced_laws": []
+    },
+    {
+        "id": 264,
+        "referenced_laws": []
+    },
+    {
+        "id": 265,
+        "referenced_laws": []
+    },
+    {
+        "id": 266,
+        "referenced_laws": [
+            265
+        ]
+    },
+    {
+        "id": 267,
+        "referenced_laws": []
+    },
+    {
+        "id": 268,
+        "referenced_laws": []
+    },
+    {
+        "id": 269,
+        "referenced_laws": []
+    },
+    {
+        "id": 270,
+        "referenced_laws": []
+    },
+    {
+        "id": 271,
+        "referenced_laws": []
+    },
+    {
+        "id": 272,
+        "referenced_laws": []
+    },
+    {
+        "id": 273,
+        "referenced_laws": []
+    },
+    {
+        "id": 274,
+        "referenced_laws": []
+    },
+    {
+        "id": 275,
+        "referenced_laws": []
+    },
+    {
+        "id": 276,
+        "referenced_laws": []
+    },
+    {
+        "id": 277,
+        "referenced_laws": []
+    },
+    {
+        "id": 278,
+        "referenced_laws": []
+    },
+    {
+        "id": 279,
+        "referenced_laws": []
+    },
+    {
+        "id": 280,
+        "referenced_laws": []
+    },
+    {
+        "id": 281,
+        "referenced_laws": []
+    },
+    {
+        "id": 282,
+        "referenced_laws": []
+    },
+    {
+        "id": 283,
+        "referenced_laws": [
+            110,
+            111
+        ]
+    },
+    {
+        "id": 284,
+        "referenced_laws": [
+            110,
+            111
+        ]
+    },
+    {
+        "id": 285,
+        "referenced_laws": []
+    },
+    {
+        "id": 286,
+        "referenced_laws": []
+    },
+    {
+        "id": 287,
+        "referenced_laws": [
+            286,
+            289
+        ]
+    },
+    {
+        "id": 288,
+        "referenced_laws": [
+            117,
+            155,
+            156,
+            326
+        ]
+    },
+    {
+        "id": 289,
+        "referenced_laws": []
+    },
+    {
+        "id": 290,
+        "referenced_laws": [
+            173,
+            174
+        ]
+    },
+    {
+        "id": 291,
+        "referenced_laws": []
+    },
+    {
+        "id": 293,
+        "referenced_laws": []
+    },
+    {
+        "id": 294,
+        "referenced_laws": []
+    },
+    {
+        "id": 295,
+        "referenced_laws": []
+    },
+    {
+        "id": 296,
+        "referenced_laws": []
+    },
+    {
+        "id": 297,
+        "referenced_laws": []
+    },
+    {
+        "id": 298,
+        "referenced_laws": [
+            224,
+            281
+        ]
+    },
+    {
+        "id": 299,
+        "referenced_laws": []
+    },
+    {
+        "id": 300,
+        "referenced_laws": [
+            79
+        ]
+    },
+    {
+        "id": 301,
+        "referenced_laws": [
+            113,
+            299
+        ]
+    },
+    {
+        "id": 302,
+        "referenced_laws": []
+    },
+    {
+        "id": 303,
+        "referenced_laws": [
+            114
+        ]
+    },
+    {
+        "id": 304,
+        "referenced_laws": []
+    },
+    {
+        "id": 305,
+        "referenced_laws": []
+    },
+    {
+        "id": 306,
+        "referenced_laws": []
+    },
+    {
+        "id": 307,
+        "referenced_laws": []
+    },
+    {
+        "id": 308,
+        "referenced_laws": []
+    },
+    {
+        "id": 309,
+        "referenced_laws": []
+    },
+    {
+        "id": 310,
+        "referenced_laws": []
+    },
+    {
+        "id": 311,
+        "referenced_laws": []
+    },
+    {
+        "id": 312,
+        "referenced_laws": []
+    },
+    {
+        "id": 313,
+        "referenced_laws": []
+    },
+    {
+        "id": 314,
+        "referenced_laws": []
+    },
+    {
+        "id": 315,
+        "referenced_laws": [
+            259
+        ]
+    },
+    {
+        "id": 316,
+        "referenced_laws": []
+    },
+    {
+        "id": 317,
+        "referenced_laws": []
+    },
+    {
+        "id": 318,
+        "referenced_laws": []
+    },
+    {
+        "id": 319,
+        "referenced_laws": []
+    },
+    {
+        "id": 320,
+        "referenced_laws": []
+    },
+    {
+        "id": 321,
+        "referenced_laws": [
+            322
+        ]
+    },
+    {
+        "id": 322,
+        "referenced_laws": [
+            321
+        ]
+    },
+    {
+        "id": 323,
+        "referenced_laws": []
+    },
+    {
+        "id": 324,
+        "referenced_laws": [
+            79
+        ]
+    },
+    {
+        "id": 325,
+        "referenced_laws": []
+    },
+    {
+        "id": 326,
+        "referenced_laws": []
+    },
+    {
+        "id": 327,
+        "referenced_laws": []
+    },
+    {
+        "id": 328,
+        "referenced_laws": []
+    },
+    {
+        "id": 329,
+        "referenced_laws": [
+            142
+        ]
+    },
+    {
+        "id": 330,
+        "referenced_laws": []
+    },
+    {
+        "id": 331,
+        "referenced_laws": []
+    },
+    {
+        "id": 332,
+        "referenced_laws": []
+    },
+    {
+        "id": 333,
+        "referenced_laws": []
+    },
+    {
+        "id": 334,
+        "referenced_laws": []
+    },
+    {
+        "id": 335,
+        "referenced_laws": []
+    },
+    {
+        "id": 336,
+        "referenced_laws": []
+    },
+    {
+        "id": 337,
+        "referenced_laws": [
+            110
+        ]
+    },
+    {
+        "id": 338,
+        "referenced_laws": []
+    },
+    {
+        "id": 339,
+        "referenced_laws": []
+    },
+    {
+        "id": 340,
+        "referenced_laws": []
+    },
+    {
+        "id": 341,
+        "referenced_laws": []
+    },
+    {
+        "id": 342,
+        "referenced_laws": []
+    },
+    {
+        "id": 343,
+        "referenced_laws": []
+    },
+    {
+        "id": 344,
+        "referenced_laws": []
+    },
+    {
+        "id": 345,
+        "referenced_laws": []
+    },
+    {
+        "id": 346,
+        "referenced_laws": []
+    },
+    {
+        "id": 347,
+        "referenced_laws": []
+    },
+    {
+        "id": 348,
+        "referenced_laws": []
+    },
+    {
+        "id": 349,
+        "referenced_laws": [
+            120
+        ]
+    },
+    {
+        "id": 350,
+        "referenced_laws": [
+            120
+        ]
+    },
+    {
+        "id": 351,
+        "referenced_laws": []
+    },
+    {
+        "id": 352,
+        "referenced_laws": []
+    },
+    {
+        "id": 353,
+        "referenced_laws": []
+    },
+    {
+        "id": 354,
+        "referenced_laws": []
+    },
+    {
+        "id": 355,
+        "referenced_laws": []
+    },
+    {
+        "id": 356,
+        "referenced_laws": []
+    },
+    {
+        "id": 357,
+        "referenced_laws": []
+    },
+    {
+        "id": 358,
+        "referenced_laws": []
+    },
+    {
+        "id": 359,
+        "referenced_laws": []
+    },
+    {
+        "id": 360,
+        "referenced_laws": [
+            179,
+            308,
+            376
+        ]
+    },
+    {
+        "id": 361,
+        "referenced_laws": [
+            110,
+            337,
+            342
+        ]
+    },
+    {
+        "id": 362,
+        "referenced_laws": [
+            338
+        ]
+    },
+    {
+        "id": 363,
+        "referenced_laws": []
+    },
+    {
+        "id": 364,
+        "referenced_laws": []
+    },
+    {
+        "id": 365,
+        "referenced_laws": []
+    },
+    {
+        "id": 366,
+        "referenced_laws": []
+    },
+    {
+        "id": 367,
+        "referenced_laws": []
+    },
+    {
+        "id": 368,
+        "referenced_laws": []
+    },
+    {
+        "id": 369,
+        "referenced_laws": []
+    },
+    {
+        "id": 370,
+        "referenced_laws": []
+    },
+    {
+        "id": 371,
+        "referenced_laws": [
+            368,
+            369,
+            370,
+            377,
+            378
+        ]
+    },
+    {
+        "id": 372,
+        "referenced_laws": []
+    },
+    {
+        "id": 373,
+        "referenced_laws": []
+    },
+    {
+        "id": 374,
+        "referenced_laws": []
+    },
+    {
+        "id": 375,
+        "referenced_laws": []
+    },
+    {
+        "id": 376,
+        "referenced_laws": []
+    },
+    {
+        "id": 377,
+        "referenced_laws": []
+    },
+    {
+        "id": 378,
+        "referenced_laws": []
+    },
+    {
+        "id": 379,
+        "referenced_laws": []
+    },
+    {
+        "id": 380,
+        "referenced_laws": []
+    },
+    {
+        "id": 381,
+        "referenced_laws": []
+    },
+    {
+        "id": 382,
+        "referenced_laws": []
+    },
+    {
+        "id": 383,
+        "referenced_laws": [
+            19
+        ]
+    },
+    {
+        "id": 384,
+        "referenced_laws": []
+    },
+    {
+        "id": 385,
+        "referenced_laws": []
+    },
+    {
+        "id": 386,
+        "referenced_laws": []
+    },
+    {
+        "id": 387,
+        "referenced_laws": [
+            119
+        ]
+    },
+    {
+        "id": 388,
+        "referenced_laws": []
+    },
+    {
+        "id": 389,
+        "referenced_laws": [
+            18,
+            108,
+            109,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            123,
+            141,
+            142,
+            144,
+            146,
+            150,
+            151,
+            152,
+            153,
+            154,
+            168,
+            169,
+            173,
+            174,
+            175,
+            178,
+            188,
+            189,
+            190,
+            191,
+            192,
+            193,
+            194,
+            195,
+            196,
+            205,
+            206,
+            207,
+            208,
+            219,
+            220,
+            221,
+            222,
+            223,
+            224,
+            243,
+            248,
+            249,
+            250,
+            251,
+            252,
+            253,
+            254,
+            255,
+            256,
+            257,
+            258,
+            259,
+            265,
+            282,
+            299,
+            301,
+            302,
+            303,
+            304,
+            305,
+            309,
+            311,
+            329,
+            353,
+            354,
+            355,
+            356,
+            357,
+            358,
+            359,
+            364,
+            365,
+            373,
+            374,
+            386,
+            421,
+            422,
+            423,
+            424,
+            425
+        ]
+    },
+    {
+        "id": 390,
+        "referenced_laws": [
+            14,
+            389,
+            19
+        ]
+    },
+    {
+        "id": 391,
+        "referenced_laws": [
+            178,
+            134
+        ]
+    },
+    {
+        "id": 392,
+        "referenced_laws": []
+    },
+    {
+        "id": 393,
+        "referenced_laws": []
+    },
+    {
+        "id": 394,
+        "referenced_laws": []
+    },
+    {
+        "id": 395,
+        "referenced_laws": []
+    },
+    {
+        "id": 396,
+        "referenced_laws": []
+    },
+    {
+        "id": 397,
+        "referenced_laws": []
+    },
+    {
+        "id": 398,
+        "referenced_laws": [
+            134
+        ]
+    },
+    {
+        "id": 399,
+        "referenced_laws": []
+    },
+    {
+        "id": 400,
+        "referenced_laws": []
+    },
+    {
+        "id": 401,
+        "referenced_laws": []
+    },
+    {
+        "id": 402,
+        "referenced_laws": []
+    },
+    {
+        "id": 403,
+        "referenced_laws": []
+    },
+    {
+        "id": 404,
+        "referenced_laws": [
+            110,
+            337,
+            361
+        ]
+    },
+    {
+        "id": 405,
+        "referenced_laws": [
+            110,
+            337,
+            361
+        ]
+    },
+    {
+        "id": 406,
+        "referenced_laws": [
+            338,
+            362
+        ]
+    },
+    {
+        "id": 407,
+        "referenced_laws": [
+            338,
+            362
+        ]
+    },
+    {
+        "id": 408,
+        "referenced_laws": []
+    },
+    {
+        "id": 409,
+        "referenced_laws": []
+    },
+    {
+        "id": 410,
+        "referenced_laws": []
+    },
+    {
+        "id": 411,
+        "referenced_laws": []
+    },
+    {
+        "id": 412,
+        "referenced_laws": []
+    },
+    {
+        "id": 413,
+        "referenced_laws": [
+            114,
+            303
+        ]
+    },
+    {
+        "id": 414,
+        "referenced_laws": []
+    },
+    {
+        "id": 415,
+        "referenced_laws": []
+    },
+    {
+        "id": 416,
+        "referenced_laws": []
+    },
+    {
+        "id": 417,
+        "referenced_laws": []
+    },
+    {
+        "id": 418,
+        "referenced_laws": []
+    },
+    {
+        "id": 419,
+        "referenced_laws": []
+    },
+    {
+        "id": 420,
+        "referenced_laws": []
+    },
+    {
+        "id": 421,
+        "referenced_laws": []
+    },
+    {
+        "id": 422,
+        "referenced_laws": []
+    },
+    {
+        "id": 423,
+        "referenced_laws": []
+    },
+    {
+        "id": 424,
+        "referenced_laws": []
+    },
+    {
+        "id": 425,
+        "referenced_laws": []
+    },
+    {
+        "id": 426,
+        "referenced_laws": []
+    }
+]
