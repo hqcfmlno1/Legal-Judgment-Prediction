@@ -8,16 +8,17 @@ class GraphLookUp:
     def getAllRelatedArticleId(self,article_id):
         res=[]
         q=[]
-        visited = [0]*500
+        visited = set()
         with open(self.filepath, 'r', encoding='utf-8') as f:
             metadata = json.load(f)
-        visited[article_id]=1
+        visited.add(article_id)
         q.append(article_id)
         while len(q)!=0:
             current = q.pop(0)
-            for i in metadata[str(current)]:
-                if visited[i]==0:
+            related = metadata.get(str(current), [])
+            for i in related:
+                if i not in visited:
                     q.append(i)
                     res.append(i)
-                    visited[i]=1
+                    visited.add(i)
         return res
