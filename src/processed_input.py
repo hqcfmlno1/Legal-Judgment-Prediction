@@ -29,7 +29,7 @@ class ProcessedInput:
         tokenizer = AutoTokenizer.from_pretrained(checkpoint)
         model = AutoModel.from_pretrained(checkpoint)
         text = ViTokenizer.tokenize(text)
-        inputs = tokenizer(text, truncation=True, padding=True, return_tensors = 'pt')
+        inputs = tokenizer(text, truncation=True, padding=True, max_length=256, return_tensors = 'pt')
         model_output = model(**inputs)
         final_embedding = ProcessedInput.mean_pooling(model_output, inputs['attention_mask'])
         return final_embedding[0].detach().tolist()
@@ -43,12 +43,12 @@ class ProcessedInput:
             "max_output_tokens": 10000, 
         }
         model = genai.GenerativeModel(
-            model_name="gemma-3-4b-it",
+            model_name="gemma-4-31b-it",
             generation_config=generation_config
         )
         prompt = f"""
             bạn là 1 trợ lý am hiểu về pháp luật việt nam hãy viết lại 1 câu có nghĩa tương tự với câu: {input_text} sử dụng các từ ngữ pháp lý của bộ luật hình sự việt nam
-            chú ý chỉ viết lại câu, không thêm bất kì thông tin nào, tuy nhiên có thể thêm ý kiến của bạn về việc tăng nặng giảm nhẹ
+            chú ý chỉ viết lại câu, không thêm bất kì thông tin nào, tuy nhiên có thể thêm ý kiến của bạn về việc tăng nặng giảm nhẹ. Chú ý chiều dài của câu không được quá 256 từ, viết làm sao để cô động mà vẫn đầy đủ ý
             """
         response = model.generate_content(prompt)
         return response.text
