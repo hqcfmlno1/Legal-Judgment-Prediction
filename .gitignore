@@ -3,3 +3,7 @@
 __pycache__/
 *.pyc
 venv/
+test_genai.py
+testPYvi.py
+testqueryrewriting.py
+testGraph.py
