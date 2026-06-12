@@ -1,0 +1,10 @@
+python-dotenv==1.1.1
+psycopg2-binary==2.9.12
+pyvi==0.1.1
+unidecode==1.4.0
+pydantic==2.12.4
+google-generativeai==0.8.5
+sentence-transformers==4.1.0
+transformers==4.52.3
+scikit-learn==1.6.1
+torch>=2.0.0
