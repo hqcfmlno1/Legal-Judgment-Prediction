@@ -63,6 +63,8 @@ class LegalPostgresDb:
         return top_k_article_ids
 
     def find_article_content(self, article_id_list):
+        if not article_id_list:
+            return {}
         with self.conn:
             with self.conn.cursor() as cursor:
                 cursor.execute(
